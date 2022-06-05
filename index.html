@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sudoku</title>
+</head>
+
+<body onkeydown="handleKey(event)">
+    <header>
+        <a href="index.html">Sudoku</a>
+        <div class="user-board"></div>
+        <div class="user-score"></div>
+    </header>
+    <hr>
+    <div class="main">
+        <div class="login">
+            <div>
+                <h1>Login</h1>
+                <span>Login with your personal details and start the game.</span>
+            </div>
+            <div>
+                <input class="user-name" type="text" placeholder="User Name">
+                <span class="alert-user">User name does not exist</span>
+                <input class="user-pass" type="password" placeholder="Password">
+                <span class="alert-pass">Incorrect password</span>
+                <button onclick="onLogin()">Login</button>
+                <button class="menu-change" onclick="onChangeMenu('signup')">Sign up?</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/util.js "></script>
+
+</body>
+
+</html>
